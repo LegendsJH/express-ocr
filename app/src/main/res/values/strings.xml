@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">取件码识别</string>
+    <string name="hint_input">输入取件码或尾号，如 2302</string>
+    <string name="btn_photo">拍照识别</string>
+    <string name="btn_video">视频识别</string>
+    <string name="btn_stop">停止</string>
+    <string name="btn_resume">继续扫描</string>
+    <string name="camera_permission_required">需要相机权限才能识别取件码</string>
+    <string name="input_too_short">请至少输入 3 位数字</string>
+    <string name="scanning">正在识别…</string>
+    <string name="matched">已匹配到取件码</string>
+    <string name="here_label">在这里！</string>
+    <string name="zoom_hint">双指缩放，双击放大/还原</string>
+    <string name="camera_gesture_hint">预览时可双指缩放、点击对焦</string>
+    <string name="not_found">未识别到匹配的取件码，请重试</string>
+    <string name="ocr_failed">识别失败，请重试</string>
+</resources>
