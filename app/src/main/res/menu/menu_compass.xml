@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_compass"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/compass_tab" />
+    <item
+        android:id="@+id/nav_level"
+        android:icon="@android:drawable/ic_menu_crop"
+        android:title="@string/level_tab" />
+</menu>

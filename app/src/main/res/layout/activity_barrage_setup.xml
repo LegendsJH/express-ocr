@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/barrage_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:maxLines="3"
+                android:text="@string/barrage_default" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/labelSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/barrage_text_size"
+            android:textColor="#FF333333"
+            android:textSize="15sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:value="72"
+            android:valueFrom="24"
+            android:valueTo="160"
+            android:stepSize="4" />
+
+        <RadioGroup
+            android:id="@+id/scrollGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:buttonTint="#FF00897B"
+                android:checked="true"
+                android:text="@string/barrage_scroll"
+                android:textColor="#FF222222" />
+
+            <RadioButton
+                android:id="@+id/radioStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF00897B"
+                android:text="@string/barrage_static"
+                android:textColor="#FF222222" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/labelSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/barrage_speed"
+            android:textColor="#FF333333"
+            android:textSize="15sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:value="5"
+            android:valueFrom="1"
+            android:valueTo="10"
+            android:stepSize="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/barrage_bg_color"
+            android:textColor="#FF333333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/bgColorRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/barrage_text_color"
+            android:textColor="#FF333333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/textColorRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShow"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/barrage_show"
+            app:backgroundTint="#FF43A047"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+</ScrollView>

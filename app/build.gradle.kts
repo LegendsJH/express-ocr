@@ -13,6 +13,9 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
+        ndk {
+            abiFilters += listOf("armeabi-v7a", "arm64-v8a")
+        }
     }
 
     buildTypes {
@@ -53,4 +56,7 @@ dependencies {
     implementation("androidx.camera:camera-view:$cameraX")
 
     implementation("com.google.mlkit:text-recognition-chinese:16.0.1")
+
+    // Local circle detection for chopsticks / pipe ends (no cloud API)
+    implementation("org.opencv:opencv:4.9.0")
 }

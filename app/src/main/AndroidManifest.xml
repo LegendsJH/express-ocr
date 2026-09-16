@@ -3,9 +3,17 @@
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true" />
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,14 +23,60 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpressOcr">
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".CountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".barrage.BarrageSetupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".barrage.BarrageDisplayActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".ruler.RulerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ExpressOcr.Fullscreen"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".clock.ClockActivity"
+            android:exported="false"
+            android:screenOrientation="sensorLandscape"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".compass.CompassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".calculator.CalculatorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".reaction.ReactionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".HomeActivity" />
     </application>
 </manifest>

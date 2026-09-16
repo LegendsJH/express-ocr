@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">取件码识别</string>
+    <string name="app_name">工具箱</string>
+    <string name="home_title">工具箱</string>
+    <string name="home_section_vision">识别工具</string>
+    <string name="home_section_screen">屏幕工具</string>
+    <string name="home_section_calc">计算与测试</string>
+    <string name="btn_count_sticks">数签子</string>
+    <string name="btn_pickup_code">取件码识别</string>
+    <string name="btn_barrage">手持弹幕</string>
+    <string name="btn_ruler">尺子</string>
+    <string name="btn_clock">时间屏幕</string>
+    <string name="btn_compass">指南针</string>
+
     <string name="hint_input">输入取件码或尾号，如 2302</string>
     <string name="btn_photo">拍照识别</string>
     <string name="btn_video">视频识别</string>
     <string name="btn_stop">停止</string>
     <string name="btn_resume">继续扫描</string>
-    <string name="camera_permission_required">需要相机权限才能识别取件码</string>
+    <string name="camera_permission_required">需要相机权限才能使用</string>
     <string name="input_too_short">请至少输入 3 位数字</string>
     <string name="scanning">正在识别…</string>
     <string name="matched">已匹配到取件码</string>
@@ -15,4 +26,102 @@
     <string name="camera_gesture_hint">预览时可双指缩放、点击对焦</string>
     <string name="not_found">未识别到匹配的取件码，请重试</string>
     <string name="ocr_failed">识别失败，请重试</string>
+
+    <string name="count_title">数签子</string>
+    <string name="preset_chopstick">细签/筷子</string>
+    <string name="preset_pipe">钢管/粗圆</string>
+    <string name="btn_capture_count">拍照计数</string>
+    <string name="btn_retake">重新拍摄</string>
+    <string name="counting">正在计数…</string>
+    <string name="count_result">共 %d 个</string>
+    <string name="count_failed">计数失败，请重试或换光线更均匀的角度</string>
+    <string name="opencv_init_failed">OpenCV 初始化失败</string>
+    <string name="count_hint">尽量让签头占满画面、正对镜头；避开手背和杂乱背景后再拍</string>
+
+    <string name="barrage_title">手持弹幕</string>
+    <string name="barrage_hint">请输入弹幕内容</string>
+    <string name="barrage_text_size">文字大小</string>
+    <string name="barrage_scroll">滚动弹幕</string>
+    <string name="barrage_static">静止弹幕</string>
+    <string name="barrage_speed">滚动速度</string>
+    <string name="barrage_bg_color">背景颜色</string>
+    <string name="barrage_text_color">文字颜色</string>
+    <string name="barrage_show">显示弹幕</string>
+    <string name="barrage_default">这是一条弹幕</string>
+
+    <string name="ruler_title">尺子</string>
+    <string name="ruler_calibrate">校准</string>
+    <string name="ruler_calibrate_hint">用真实尺子对齐刻度后点「完成校准」</string>
+    <string name="ruler_calibrate_done">校准完成</string>
+    <string name="ruler_finish_calibrate">完成校准</string>
+    <string name="ruler_cancel_calibrate">取消</string>
+
+    <string name="clock_title">时间屏幕</string>
+    <string name="clock_theme">更换主题</string>
+
+    <string name="compass_title">指南针</string>
+    <string name="compass_tab">指南针</string>
+    <string name="level_tab">水平仪</string>
+    <string name="compass_lat">纬度</string>
+    <string name="compass_lng">经度</string>
+    <string name="compass_alt">海拔</string>
+    <string name="compass_unavailable">--</string>
+    <string name="location_permission_required">需要定位权限以显示经纬度和海拔</string>
+    <string name="level_horizontal">水平</string>
+    <string name="level_vertical">垂直</string>
+    <string name="back">返回</string>
+
+    <string name="btn_calculator">计算器</string>
+    <string name="btn_reaction">反应力测试</string>
+    <string name="calc_title">计算器</string>
+    <string name="calc_mode_math">计算</string>
+    <string name="calc_mode_kinship">亲戚</string>
+    <string name="calc_mode_bmi">BMI</string>
+    <string name="calc_mode_date">日期</string>
+    <string name="calc_self_male">我是男生</string>
+    <string name="calc_self_female">我是女生</string>
+    <string name="calc_call_them">我叫Ta：%s</string>
+    <string name="calc_call_me">Ta叫我：%s</string>
+    <string name="calc_unknown">暂无标准称呼</string>
+    <string name="calc_chain_me">我</string>
+    <string name="calc_clear_chain">清空关系</string>
+
+    <string name="bmi_height">身高</string>
+    <string name="bmi_weight">体重</string>
+    <string name="bmi_unit_cm">%.1f CM</string>
+    <string name="bmi_unit_kg">%.1f KG</string>
+    <string name="bmi_calc">计算 BMI</string>
+    <string name="bmi_result_title">你的 BMI 指数</string>
+    <string name="bmi_hw_line">%1$.1f CM · %2$.1f KG</string>
+    <string name="bmi_value_line">%.2f</string>
+    <string name="bmi_cat_under">偏瘦</string>
+    <string name="bmi_cat_normal">正常</string>
+    <string name="bmi_cat_over">超重</string>
+    <string name="bmi_cat_obese">肥胖</string>
+    <string name="bmi_advice_under">体重偏轻，注意营养均衡，适当增重。</string>
+    <string name="bmi_advice_normal">你的体重很健康，请继续保持！</string>
+    <string name="bmi_advice_over">体重略高，建议控制饮食并加强运动。</string>
+    <string name="bmi_advice_obese">体重偏高，建议咨询医生并制定减重计划。</string>
+    <string name="bmi_disclaimer">BMI 不能区分脂肪与肌肉，相同身高体重也可能脂肪含量不同，仅作总体营养状况参考。</string>
+
+    <string name="date_diff_title">计算日期差</string>
+    <string name="date_offset_title">计算日期</string>
+    <string name="date_start">起始日期：%s</string>
+    <string name="date_end">结束日期：%s</string>
+    <string name="date_interval_days">间隔天数（可为负）</string>
+    <string name="date_calc_offset">计算目标日期</string>
+    <string name="date_diff_result">计算结果：相差 %d 天</string>
+    <string name="date_offset_result">%1$d 天后是：%2$s</string>
+    <string name="date_offset_result_before">%1$d 天前是：%2$s</string>
+
+    <string name="reaction_title">反应力测试</string>
+    <string name="reaction_start">点击\n开始测试你的反应时间</string>
+    <string name="reaction_wait">等待变色…\n变色后再点一下</string>
+    <string name="reaction_go">点！</string>
+    <string name="reaction_early">太早了！\n点击重新开始</string>
+    <string name="reaction_result">你的反应时间为：%d ms\n点击继续</string>
+    <string name="reaction_best">最快记录</string>
+    <string name="reaction_avg">近五次平均</string>
+    <string name="reaction_none">--</string>
+    <string name="reaction_reset">重置成绩</string>
 </resources>

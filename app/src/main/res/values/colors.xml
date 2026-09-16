@@ -6,5 +6,9 @@
     <color name="accent">#FFE53935</color>
     <color name="button_primary">#FF1976D2</color>
     <color name="button_secondary">#FF455A64</color>
-    <color name="ic_launcher_background">#1976D2</color>
+    <color name="home_bg">#FFF7F8FA</color>
+    <color name="home_item">#FFEEEEEE</color>
+    <color name="home_text">#FF222222</color>
+    <color name="ic_launcher_background">#0F766E</color>
+    <color name="ic_launcher_accent">#FBBF24</color>
 </resources>
