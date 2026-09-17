@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tipMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/tip_author_message"
+            android:textColor="#FF333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/tip_long_press_hint"
+            android:textColor="#FF888888"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgWechat"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#FFF0F0F0"
+                android:contentDescription="@string/tip_wechat"
+                android:scaleType="fitCenter"
+                android:src="@drawable/qr_wechat" />
+
+            <ImageView
+                android:id="@+id/imgAlipay"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="#FFF0F0F0"
+                android:contentDescription="@string/tip_alipay"
+                android:scaleType="fitCenter"
+                android:src="@drawable/qr_alipay" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

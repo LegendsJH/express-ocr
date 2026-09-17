@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <cache-path
+        name="tip_cache"
+        path="tip/" />
+    <external-cache-path
+        name="tip_ext_cache"
+        path="tip/" />
+</paths>

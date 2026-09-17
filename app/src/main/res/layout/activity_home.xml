@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_home"
-    android:fillViewport="true"
-    android:scrollbars="none">
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +30,7 @@
             android:textSize="26sp"
             android:textStyle="bold" />
 
-        <!-- 识别工具 -->
+        <!-- 璇嗗埆宸ュ叿 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,7 +90,7 @@
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!-- 占位，保持一行两个的布局节奏 -->
+            <!-- 鍗犱綅锛屼繚鎸佷竴琛屼袱涓殑甯冨眬鑺傚 -->
             <View
                 android:layout_width="0dp"
                 android:layout_height="52dp"
@@ -92,7 +98,7 @@
                 android:layout_weight="1" />
         </LinearLayout>
 
-        <!-- 屏幕工具 -->
+        <!-- 灞忓箷宸ュ叿 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -253,7 +259,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- 计算与测试 -->
+        <!-- 璁＄畻涓庢祴璇?-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -344,4 +350,16 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-</ScrollView>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/btnTipAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="16dp"
+        android:text="@string/tip_author"
+        android:textColor="#FF26A69A"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -57,6 +57,9 @@ dependencies {
 
     implementation("com.google.mlkit:text-recognition-chinese:16.0.1")
 
+    // Decode tip QR codes from static images (browser-like recognize)
+    implementation("com.google.zxing:core:3.5.3")
+
     // Local circle detection for chopsticks / pipe ends (no cloud API)
     implementation("org.opencv:opencv:4.9.0")
 }
